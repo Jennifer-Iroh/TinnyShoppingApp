@@ -56,6 +56,6 @@ itemForm.onsubmit = async (event) => {
 
 
     // Clear the form on submit
- 
+
     itemForm.reset()
 }
