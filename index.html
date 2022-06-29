@@ -41,6 +41,15 @@
     <div id="itemsList"></div>
     <div id="itemsTotalPrice"></div>
 
+    <script>
+      //Check that the services are supported
+      if ("serviceWorker" in navigator) {
+        //Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script>
     <script src="./dexie.min.js"></script>
     <script src="./script.js"></script>
   </body>
