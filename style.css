@@ -1,0 +1,91 @@
+* {
+  margin: unset;
+  padding: unset;
+}
+
+body {
+  background-color: #dff8eb;
+}
+
+nav {
+  background: #d99ac5;
+  height: 3rem;
+  line-height: 3rem;
+  color: #dff8eb;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+#itemForm label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#itemForm input {
+  height: 2rem;
+  text-align: center;
+  border: 1px solid #d99ac5;
+}
+
+#qtyInput,
+#priceInput {
+  width: 3rem;
+}
+
+#addItemBtn {
+  border: 0.2rem solid #e574bc;
+  background: #d99ac5;
+  color: #dff8eb;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+}
+
+#itemsList {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: #d99ac5;
+  color: #dff8eb;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  height: 100%;
+  width: 2.5rem;
+}
+
+.itemInfo {
+  text-align: center;
+}
+
+#deleteItemBtn {
+  margin: 0 0 0 auto;
+  width: 80%;
+  height: 100%;
+  border: unset;
+  background:#A71125;
+  color: #dff8eb;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#deleteItemBtn:active{
+    margin-top: 0.1rem;
+}
+
+.purchased{
+    background:#e574bc;
+    color: #dff8eb;
+}
+
+.purchased p{
+    text-decoration: line-through;
+}
