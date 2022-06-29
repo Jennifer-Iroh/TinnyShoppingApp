@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/icon-192.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/icon-192.png" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json">
     <title>Tinny Shopping App</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav>
-      <p>Tinny Shopping App</p>
+        <p>Tinny Shopping App</p>
     </nav>
     <div class="container">
-      <form action="" id="itemForm">
-        <label for="itemName">
-          Name of Item:
-          <input type="text" id="nameInput" required />
-        </label>
+        <form action="" id="itemForm">
+            <label for="itemName">
+                Name of Item:
+                <input type="text" id="nameInput" required />
+            </label>
 
-        <label for="itemQty">
-          Quantity:
-          <input type="number" id="qtyInput" value="1" />
-        </label>
+            <label for="itemQty">
+                Quantity:
+                <input type="number" id="qtyInput" value="1" />
+            </label>
 
-        <label for="itemPrice">
-          Price:
-          <input type="number" id="priceInput" value="0" />
-        </label>
+            <label for="itemPrice">
+                Price:
+                <input type="number" id="priceInput" value="0" />
+            </label>
 
-        <button type="submit" id="addItemBtn">Add Item</button>
-      </form>
+            <button type="submit" id="addItemBtn">Add Item</button>
+        </form>
     </div>
 
     <div id="itemsList"></div>
     <div id="itemsTotalPrice"></div>
 
+    <!-- Scripts -->
     <script>
-      //Check that the services are supported
-      if ("serviceWorker" in navigator) {
-        //Use the window load event to keep the page load performant
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./sw.js");
-        });
-      }
+        //Check that the services are supported
+        if ("serviceWorker" in navigator) {
+            //Use the window load event to keep the page load performant
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js");
+            });
+        }
     </script>
     <script src="./dexie.min.js"></script>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
