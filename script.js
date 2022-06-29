@@ -53,8 +53,9 @@ itemForm.onsubmit = async (event) => {
     // The above code returns a promise that we can pass into an await function and then populate the dexie database
     // Also, this syntax is like this because of object destructuring
     await db.items.add({ itemName, itemQty, itemPrice })
-    
+
 
     // Clear the form on submit
+ 
     itemForm.reset()
 }
