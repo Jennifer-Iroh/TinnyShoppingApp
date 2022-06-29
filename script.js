@@ -54,8 +54,7 @@ itemForm.onsubmit = async (event) => {
     // Also, this syntax is like this because of object destructuring
     await db.items.add({ itemName, itemQty, itemPrice })
 
-
+    
     // Clear the form on submit
-
     itemForm.reset()
 }
