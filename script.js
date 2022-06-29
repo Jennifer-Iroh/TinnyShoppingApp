@@ -75,4 +75,5 @@ const togglePurchaseStatus = async (event, id) => {
 const deleteItem = async (id) => {
     await db.items.delete(id)
     await populateItemsList()
+    
 }
